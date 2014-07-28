@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/audio_state"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="33dp"
+        android:text="@string/audio_on_off"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="33dp"
+        android:text="@string/audio_raise_low"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar1"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/volumedisplay"
+        android:textAppearance="?android:attr/textAppearanceLarge" />    
+    
+
+    <ImageView
+        android:id="@+id/audio_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginLeft="68dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:src="@drawable/audio_on" />
+
+    <ImageView
+        android:id="@+id/audio_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/audio_status"
+        android:src="@drawable/on" />
+
+    <ImageView
+        android:id="@+id/volum_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/audio_on"
+        android:src="@drawable/up" />
+
+    <ImageView
+        android:id="@+id/volum_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/volum_up"
+        android:layout_toLeftOf="@+id/volum_up"
+        android:src="@drawable/down" />
+
+    <ImageView
+        android:id="@+id/audio_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/volum_up"
+        android:src="@drawable/off" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/volum_up"
+        android:layout_below="@+id/volum_up"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="96dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/audio_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="@string/audio_clear"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/goback"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+</RelativeLayout>

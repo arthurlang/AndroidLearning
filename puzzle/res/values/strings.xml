@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">拼图游戏</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="audio_state">声音状态</string>
+        <string name="audio_on_off">开启/关闭声音</string>
+        <string name="audio_raise_low">放大/减少音量</string>
+            <string name="audio_clear"> 清空存档</string>
+                <string name="goback">返回</string>
+                <string name="volumedisplay">音量显示</string>
+                
+    <!-- finish -->
+    <string name="finish">完成</string>
+    <string name="tipText">作为高手中的高高手，敢问大侠尊姓大名</string>
+    
+    
+    
+    <!--  menu   -->
+    <string name="menu_back">返回游戏</string>
+    <string name="menu_help">游戏帮助</string>
+    <string name="menu_setting">游戏设置</string>
+    <string name="menu_home">返回主菜单</string>
+     
+                
+</resources>
